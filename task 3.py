@@ -27,7 +27,7 @@ if 'score' not in st.session_state:
     st.session_state.q_index = 0
     st.session_state.guesses = []
 
-if session_state.q_index < len(questions):
+if st.session_state.q_index < len(questions):
     q = questions[st.session_state.q_index]
     opts = options[st.session_state.q_index]
     st.subheader(f'Q{st.session_state.q_index +1}:{q}')
